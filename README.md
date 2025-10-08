@@ -1,11 +1,11 @@
-# 🎵 GTZAN Genre Classification — MLP and LSTM Replication Study
+# GTZAN Genre Classification — MLP and LSTM Replication Study
 
 This repository reproduces and analyzes results from a published machine learning study on music genre classification using the [GTZAN dataset]([http://marsyas.info/downloads/datasets.html](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1244/final-projects/DominicJosephDeMarcoEricMartzReginaTHTa.pdf).  
 It compares **MLP** (feed-forward) and **LSTM** (recurrent) architectures trained on **3-second, 6-second, and 9-second audio feature slices**.
 
 ---
 
-## 🧠 Overview
+## Overview
 
 The goal of this project is to replicate the performance reported in the paper:
 
@@ -18,7 +18,7 @@ Using PyTorch, we trained comparable models from scratch, evaluated their accura
 
 ---
 
-## ⚙️ Implementation Details
+## Implementation Details
 
 **Framework:** PyTorch  
 **Dataset:** GTZAN (10 genres × 100 tracks = 1000 audio clips)  
@@ -33,7 +33,7 @@ Using PyTorch, we trained comparable models from scratch, evaluated their accura
 
 ---
 
-## 🧩 Experiment Design
+## Experiment Design
 
 We evaluate the models at two levels:
 
@@ -46,7 +46,7 @@ This dual-level analysis helps identify whether the model is learning *local spe
 
 ---
 
-## 📊 Results Summary
+## Results Summary
 
 | Model | Time Slice | Accuracy | Macro F1 |
 |--------|-------------|-----------|----------|
@@ -58,7 +58,7 @@ This dual-level analysis helps identify whether the model is learning *local spe
 
 ---
 
-## 🔍 Discussion
+## Discussion
 
 While the replicated models performed well, we were **unable to reach the reported 93% test accuracy** for the LSTM on 3-second features.  
 We hypothesize that the original paper may have:
