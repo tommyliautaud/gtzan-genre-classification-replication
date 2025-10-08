@@ -25,7 +25,7 @@ Using PyTorch, we trained comparable models from scratch, evaluated their accura
 **Features:** 58-dimensional audio features extracted in 3-second windows  
 **Models:**  
 - **MLP:** 2-layer fully connected network with dropout and ReLU  
-- **LSTM:** 2-layer bidirectional LSTM with 64 hidden units and dense ReLU + dropout  
+- **LSTM:** 2-layer LSTM with 64 hidden units and dense ReLU + dropout  
 **Optimizer:** Adam (lr = 0.001 – 0.01)  
 **Epochs:** 50 – 100  
 **Batch size:** 16  
